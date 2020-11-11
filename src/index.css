@@ -3,6 +3,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(212, 212, 212);
 }
 
 code {
@@ -12,3 +13,4 @@ code {
 .main-content {
   margin-left: 200px;
 }
+

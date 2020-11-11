@@ -3,7 +3,8 @@ import React from 'react'
 const headerStyle = {
   background: '#333',
   color: '#fff',
-  padding: '10px'
+  padding: '10px',
+  borderBottom: '2px solid #E1AD01'
 }
 
 export default function Header() {
