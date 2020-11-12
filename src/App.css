@@ -1,16 +1,52 @@
-/* background-color: rgb(212, 212, 212); */
+* { 
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 
 .header {
+  margin: 0px;
+  height: 150px;
   background: #333;
   color: #fff;
-  padding: 10px;
-  border-bottom: 2px solid #E1AD01;
+  border-bottom: 2px solid #E1AD01;  
 }
+
 
 .sidebar {
   background: #444;
-  color: #fff;
-  width: 200px;
-  height: 100%;
-  position: fixed;
+  color: #fff;  
+} 
+
+/* This is display grid */
+.main-content {
+  background-color: rgb(212, 212, 212);
+}
+
+/* These are the grid divs */
+.card-div {
+  height: auto;
+  width: fit-content;
+  padding: 10px;
+  margin: auto;
+  border-color: rgba(250, 250, 250, 0.2);
+  box-shadow: 5px 5px 12px rgb(0, 0, 0, 1), -5px -5px 12px rgba(50, 50, 50, 1);
+  border-radius: 3px;
+}
+
+
+.card-img {
+  
+}
+
+.image {
+  height:300px;
+  border: 2px solid #E1AD01;
+  border-radius: 3px;
 }
