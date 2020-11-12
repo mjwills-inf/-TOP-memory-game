@@ -1,0 +1,16 @@
+/* background-color: rgb(212, 212, 212); */
+
+.header {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  border-bottom: 2px solid #E1AD01;
+}
+
+.sidebar {
+  background: #444;
+  color: #fff;
+  width: 200px;
+  height: 100%;
+  position: fixed;
+}
