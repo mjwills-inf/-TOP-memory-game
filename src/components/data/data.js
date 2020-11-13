@@ -6,18 +6,19 @@ const pictures = [
   },
   {
     id: 2,
-    name: 'Centre',
-    src:  '/img/Centre-Giclee_5000x.jpg'
+    name: 'Wolf',
+    src:  '/img/Wolf-Giclee_5000x.jpg'
   },
+  
   {
     id: 3,
-    name: 'Lyra',
-    src:  '/img/Lyra-Giclee_5000x.jpg'
+    name: 'Shade',
+    src:  '/img/Shade-giclee_5000x.jpg'
   },
   {
     id: 4,
-    name: 'Midpoint',
-    src:  '/img/Midpoint-Giclee_5000x.jpg'
+    name: 'Throne',
+    src:  '/img/Throne-Giclee_5000x.jpg'
   },
   {
     id: 5,
@@ -31,8 +32,8 @@ const pictures = [
   },
   {
     id: 7,
-    name: 'Shade',
-    src:  '/img/Shade-giclee_5000x.jpg'
+    name: 'Lyra',
+    src:  '/img/Lyra-Giclee_5000x.jpg'
   },
   {
     id: 8,
@@ -41,8 +42,8 @@ const pictures = [
   },
   {
     id: 9,
-    name: 'Throne',
-    src:  '/img/Throne-Giclee_5000x.jpg'
+    name: 'Midpoint',
+    src:  '/img/Midpoint-Giclee_5000x.jpg'
   },
   {
     id: 10,
@@ -56,9 +57,9 @@ const pictures = [
   },
   {
     id: 12,
-    name: 'Wolf',
-    src:  '/img/Wolf-Giclee_5000x.jpg'
-  }
+    name: 'Centre',
+    src:  '/img/Centre-Giclee_5000x.jpg'
+  },
 ]
 
 export { pictures }

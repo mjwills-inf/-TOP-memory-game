@@ -16,6 +16,7 @@ body {
 }
 
 .header-wrap {
+  height: 160px;
   padding: 20px;
   background: #333;
   color: #fff;
@@ -30,16 +31,12 @@ body {
   flex: 1 0 auto;
 }
 
-/* .header h1 {
-  margin: 0px;
-} */
-
 .side-page-wrap {
   
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  height: calc(100vh - 163px)
+  height: calc(100vh - 160px)
 }
 
 
@@ -80,14 +77,15 @@ body {
   border-radius: 3px;
 }
 
-
-.card-img {
-  
-}
-
 .image {
   height:300px;
   border: 2px solid #E1AD01;
   border-radius: 3px;
+}
+
+.card-title {
+  width: fit-content;
+  margin: auto;
+  font-weight: 700;
 }
 
