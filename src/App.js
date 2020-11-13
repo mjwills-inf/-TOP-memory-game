@@ -7,8 +7,10 @@ import MainContent from './components/layout/MainContent';
 function App() {
   return (
     <div className="App">
+      <div className="header-wrap">
         <Header />
-      <div className="page-sub-header">
+      </div>
+      <div className="side-page-wrap">
         <Sidebar />      
         <MainContent />
       </div>
