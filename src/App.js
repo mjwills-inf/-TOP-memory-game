@@ -10,7 +10,7 @@ function App() {
   let [score, setScore] = useState(0)
   let [best, setBest] = useState(0)
 
-  const resetScores = (current) => {
+  const resetScore = (current) => {
     best = current > best ? setBest(current) : best
     setScore(0) 
   }
@@ -27,7 +27,10 @@ function App() {
           score={score}
           best={best}
         />      
-        <MainContent />
+        <MainContent 
+          resetScores={resetScore}
+          plusScore={plusScore}
+        />
       </div>
     </div>
   );

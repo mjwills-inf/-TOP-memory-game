@@ -1,9 +1,10 @@
 import React from 'react'
 
-export default function Scores() {
+export default function Scores(props) {
   return (
     <div>
-      score
+      Score:{props.score}
+      Best:{props.best}
     </div>
   )
 }
