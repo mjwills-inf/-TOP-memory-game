@@ -9,7 +9,9 @@ export default function Sidebar(props) {
         score={props.score}
         best={props.best}
       />  
-    
+      <div className="instruction-div">
+        Dont click the same picture twice
+      </div>
     </div>
   )
 }

@@ -12,6 +12,14 @@ export default function MainContent(props) {
 
   const [pictureState, setPictureState] = useState(pictureData)
 
+  const endTurn = () => {
+    console.log("endTurn")
+    props.resetScores()
+    let arrayCopy = pictureState.map((item) => item)
+    arrayCopy.map((item) => item.clicked = false)
+    setPictureState(arrayCopy)
+  }
+  
   const shuffleArray = (array) => {
     for (let i = array.length-1; i>0; i--) {
       let j = Math.floor(Math.random()*(i+1));
@@ -19,22 +27,26 @@ export default function MainContent(props) {
     }
   }
   
-  const setClicked = (array, id) => {
-    console.log("array", array)
-    console.log("id", id)
+  const checkClicked = (array, id) => {
     let targetPicture = array.find(item => item.id === Number(id))
-    targetPicture.clicked = true
-    console.log("targetpicutre",targetPicture)
+    if (targetPicture.clicked === true) {
+      return true
+    } else {
+      targetPicture.clicked = true
+      return false
+    }
   }
 
   const handleClick = (e) => {
     let arrayCopy = pictureState.map((item) => item)
-
-    setClicked(arrayCopy, e.target.getAttribute("data-id"))
-    
-    shuffleArray(arrayCopy)
-    
-    setPictureState(arrayCopy)
+    if (checkClicked(arrayCopy, e.target.getAttribute("data-id"))) {
+      endTurn()
+    } else {
+      (console.log("running else"))
+      props.plusScore()    
+      shuffleArray(arrayCopy)    
+      setPictureState(arrayCopy)
+    }
   }
 
   return (

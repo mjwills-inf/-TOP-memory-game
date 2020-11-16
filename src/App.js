@@ -10,8 +10,10 @@ function App() {
   let [score, setScore] = useState(0)
   let [best, setBest] = useState(0)
 
-  const resetScore = (current) => {
-    best = current > best ? setBest(current) : best
+  const resetScore = () => {
+    if (score > best) {
+      setBest(score)
+    }
     setScore(0) 
   }
 

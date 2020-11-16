@@ -89,3 +89,27 @@ body {
   font-weight: 700;
 }
 
+.scores-div {
+  width: ;
+  border:2px solid #E1AD01;
+  border-radius: 3px;
+  margin: 50px auto;
+  padding: 20px 20px;
+}
+
+.score-num {
+font-weight: bold;
+margin: 10px 0px;
+}
+
+.best-num {
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+.instruction-div {
+  border:2px solid #E1AD01;
+  border-radius: 3px;
+  margin: 0px 48px;
+  padding: 20px 20px;
+}
