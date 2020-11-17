@@ -63,7 +63,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 15px;
-  padding: 10px;
+  padding: 30px 10px;
 }
 
 /* These are the grid divs */
@@ -90,10 +90,9 @@ body {
 }
 
 .scores-div {
-  width: ;
   border:2px solid #E1AD01;
   border-radius: 3px;
-  margin: 50px auto;
+  margin: 40px auto;
   padding: 20px 20px;
 }
 
