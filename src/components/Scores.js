@@ -4,10 +4,10 @@ export default function Scores(props) {
   return (
     <div className="scores-div">
       <div className="score-num">
-        Score:{props.score}
+        Score: {props.score}
       </div>
       <div className="best-num">
-        Best:{props.best}
+        Best: {props.best}
       </div>
     </div>
   )
