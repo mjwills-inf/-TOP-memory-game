@@ -116,12 +116,14 @@ margin: 10px 0px;
 /* /////////////////////////////////////////////////// */
 
 @media only screen and (max-width: 520px) {
-  .side-page-wrap {  
-    display: block;
-    justify-content: space-between;
-    height: calc(100vh - 160px)
+  body {
+    overflow-y: auto;
   }
-  
+
+  .side-page-wrap {  
+    display: block;    
+  }
+ 
   .instruction-div {
     display: none;
   }
