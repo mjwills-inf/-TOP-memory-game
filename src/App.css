@@ -112,3 +112,22 @@ margin: 10px 0px;
   margin: 0px 48px;
   padding: 20px 20px;
 }
+
+/* /////////////////////////////////////////////////// */
+
+@media only screen and (max-width: 520px) {
+  .side-page-wrap {  
+    display: block;
+    justify-content: space-between;
+    height: calc(100vh - 160px)
+  }
+  
+  .instruction-div {
+    display: none;
+  }
+
+  .scores-div {
+    padding: 5px 20px;
+    margin: 10px auto;
+  }
+}
